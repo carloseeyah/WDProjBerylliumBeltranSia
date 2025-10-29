@@ -35,3 +35,27 @@
 
 ##
 ## Wireframes
+
+### Homepage
+![Homepage](/assets/Homepage.png)
+
+### About Us
+![About Us](/assets/About%20Us.png)
+
+### Side Menu Preview
+![Menu Bar](/assets/Menu%20Bar.png)
+
+### Story
+![Story](/assets/Story.png)
+
+### Characters
+![Characters](/assets/Characters.png)
+
+### Cast
+![Cast](/assets/Cast.png)
+
+### Songs
+![Songs](/assets/Songs.png)
+
+### Game 
+![Game](/assets/Game.png)
