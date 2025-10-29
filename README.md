@@ -3,7 +3,7 @@
 #### Logo:
 ![Descendants Logo](https://logos-world.net/wp-content/uploads/2023/06/Descendants-Symbol.png)
 #### File: Descendants-Symbol.png - Logos, F. (2024, October 28). Retrieved October 27, 2025, from https://logos-world.net/descendants-logo/
-
+##
 ## Description
 
 ### This webpage aims to highlight and discuss the Disney Movie, Descendants, including the story, character analyses, and the hurdles the cast had to overcome. 
