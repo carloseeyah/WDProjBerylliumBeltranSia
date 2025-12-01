@@ -16,6 +16,16 @@ main {
 	box-sizing: border-box;
 }
 
+footer {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: rgb(63, 43, 27);
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 
 .island{
 	position: fixed;
