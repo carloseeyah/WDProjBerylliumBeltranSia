@@ -48,6 +48,12 @@ footer {
     min-height: clamp(160px, 26vh, 320px);
   }
 
+  .about-section audio {
+    display: block;
+    margin-top: clamp(12px, 2vh, 24px);
+    margin-left: 0;
+  }
+
 
   .divider { display: none; }
 
