@@ -25,33 +25,30 @@ footer {
     bottom: 0px;
     width: 100%;
   }
-
-.about-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  
+  .about-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    row-gap: 56px; 
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px;
   }
 
-.content {
-    padding: 15px;
-    text-align: left;
-    font-size: 45px;
-    width: 40%;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: rgba(230, 189, 143, 0.7);
-    
+  .about-section > div {
+    padding: 22px; 
+    background-color: rgba(230, 189, 143, 0.85);
+    font-size: 28px;
+    line-height: 1.5; 
+    box-sizing: border-box;
+    border-radius: 8px;
+    min-height: 220px; 
   }
 
-  .content2 {
-    padding: 15px;
-    text-align: right;
-    font-size: 45px;
-    width: 40%;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: rgba(230, 189, 143, 0.7);
-  }
+
+  .divider { display: none; }
 
   .divider {
     align-content: center;
