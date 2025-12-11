@@ -30,21 +30,22 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    row-gap: 56px; 
+    row-gap: 56px;
     align-items: stretch;
-    width: 100%;
+    max-width: min(1200px, 95%);
+    margin: 2rem auto;
     box-sizing: border-box;
     padding: 32px;
   }
 
   .about-section > div {
-    padding: 22px; 
+    padding: clamp(14px, 2.2vw, 28px);
     background-color: rgba(230, 189, 143, 0.85);
-    font-size: 28px;
-    line-height: 1.5; 
+    font-size: clamp(16px, 2.2vw, 28px);
+    line-height: 1.5;
     box-sizing: border-box;
     border-radius: 8px;
-    min-height: 220px; 
+    min-height: clamp(160px, 26vh, 320px);
   }
 
 
@@ -96,9 +97,9 @@ footer {
     left: 10%;
     top: 90%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: clamp(16px, 2.6vw, 50px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 15px 30px;
+    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
     border: 2px solid white;
     border-style: hidden;
     background-color: rgba(145, 106, 61, 0.7);
@@ -106,9 +107,9 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: 300px;
-    height: 120px;
-    line-height: 100px;
+    width: clamp(120px, 18vw, 300px);
+    height: clamp(48px, 12vh, 120px);
+    line-height: normal;
   }
 
   .Homepage {
@@ -116,9 +117,9 @@ footer {
     left: 10%;
     top: 78%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: clamp(16px, 2.6vw, 50px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 15px 30px;
+    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
     border: 2px solid white;
     border-style: hidden;
     background-color: rgba(145, 106, 61, 0.7);
@@ -126,9 +127,9 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: 300px;
-    height: 120px;
-    line-height: 100px;
+    width: clamp(120px, 18vw, 300px);
+    height: clamp(48px, 12vh, 120px);
+    line-height: normal;
   }
 
   .Quiz {
@@ -136,9 +137,9 @@ footer {
     left: 10%;
     top: 66%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: clamp(16px, 2.6vw, 50px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 15px 30px;
+    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
     border: 2px solid white;
     border-style: hidden;
     background-color: rgba(145, 106, 61, 0.7);
@@ -146,9 +147,9 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: 300px;
-    height: 120px;
-    line-height: 100px;
+    width: clamp(120px, 18vw, 300px);
+    height: clamp(48px, 12vh, 120px);
+    line-height: normal;
   }
 
   .Cast {
@@ -156,9 +157,9 @@ footer {
     left: 10%;
     top: 54%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: clamp(16px, 2.6vw, 50px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 15px 30px;
+    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
     border: 2px solid white;
     border-style: hidden;
     background-color: rgba(145, 106, 61, 0.7);
@@ -166,9 +167,9 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: 300px;
-    height: 120px;
-    line-height: 100px;
+    width: clamp(120px, 18vw, 300px);
+    height: clamp(48px, 12vh, 120px);
+    line-height: normal;
   }
 
   .About {
@@ -176,9 +177,9 @@ footer {
     left: 10%;
     top: 42%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: clamp(16px, 2.6vw, 50px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 15px 30px;
+    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
     border: 2px solid white;
     border-style: hidden;
     background-color: rgba(145, 106, 61, 0.7);
@@ -186,9 +187,9 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: 300px;
-    height: 120px;
-    line-height: 100px;
+    width: clamp(120px, 18vw, 300px);
+    height: clamp(48px, 12vh, 120px);
+    line-height: normal;
   }
 
   .Songs {
@@ -196,9 +197,9 @@ footer {
     left: 10%;
     top:30%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: clamp(16px, 2.6vw, 50px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 15px 30px;
+    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
     border: 2px solid white;
     border-style: hidden;
     background-color: rgba(145, 106, 61, 0.7);
@@ -206,9 +207,9 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: 300px;
-    height: 120px;
-    line-height: 100px;
+    width: clamp(120px, 18vw, 300px);
+    height: clamp(48px, 12vh, 120px);
+    line-height: normal;
   }
 
   .Story {
@@ -216,9 +217,9 @@ footer {
     left: 10%;
     top: 18%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: clamp(16px, 2.6vw, 50px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 15px 30px;
+    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
     border: 2px solid white;
     border-style: hidden;
     background-color: rgba(145, 106, 61, 0.7);
@@ -226,9 +227,9 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: 300px;
-    height: 120px;
-    line-height: 100px;
+    width: clamp(120px, 18vw, 300px);
+    height: clamp(48px, 12vh, 120px);
+    line-height: normal;
   }
 
   .Characters {
@@ -236,9 +237,9 @@ footer {
     left: 10%;
     top: 6%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: clamp(16px, 2.6vw, 50px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 15px 30px;
+    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
     border: 2px solid white;
     border-style: hidden;
     background-color: rgba(145, 106, 61, 0.7);
@@ -246,9 +247,9 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: 300px;
-    height: 120px;
-    line-height: 100px;
+    width: clamp(120px, 18vw, 300px);
+    height: clamp(48px, 12vh, 120px);
+    line-height: normal;
   }
 
   .back-item button,
