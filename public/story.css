@@ -26,6 +26,23 @@ footer {
     width: 100%;
   }
 
+  .island-tooltip {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(71, 52, 46, 1);
+    color: #fff;
+    padding: 15px 30px;
+    border: 6px;
+    white-space: nowrap;
+    font-size: clamp(5.2rem, 1.2vh, 45%);
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: opacity 0.5s;
+    z-index: 20;
+  }
+
 .about-section {
     display: flex;
     justify-content: space-between;
@@ -39,23 +56,46 @@ footer {
   }
 
 .content {
+    opacity: 0.5;
     padding: 15px;
     text-align: left;
-    font-size: clamp(18px, 2.2vw, 36px);
+    font-size: clamp(18px, 1.23vw, 36px);
+    color: black;
     flex: 1 1 45%;
     box-sizing: border-box;
-    background-color: rgba(230, 189, 143, 0.7);
+    background-color: rgba(131, 84, 30, 0);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
     min-width: 220px;
+  }
+
+  .content:hover {
+    background-color: rgba(63, 43, 27, 0.7);
+    opacity: 1;
+    color: wheat;
+    transform: scale(1.1);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   }
 
   .content2 {
     padding: 15px;
-    text-align: right;
-    font-size: clamp(18px, 2.2vw, 36px);
+    opacity: 0.5;
+    text-align: left;
+    font-size: clamp(18px, 1.0vw, 36px);
     flex: 1 1 45%;
+    color: black;
     box-sizing: border-box;
-    background-color: rgba(230, 189, 143, 0.7);
-    min-width: 220px;
+    background-color: rgba(230, 189, 143, 0);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+    min-width: 320px;
+  }
+
+  .content2:hover {
+    background-color: rgba(63, 43, 27, 0.7);
+    opacity: 1;
+    visibility: visible;
+    color: wheat;
+    transform: scale(1.1);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   }
 
   .divider {
