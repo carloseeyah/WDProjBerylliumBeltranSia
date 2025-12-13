@@ -2,7 +2,7 @@ body {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../website/Background1.png) center/cover no-repeat;
+	background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../website-assets/Background1.png) center/cover no-repeat;
 	min-height: 100vh; 
 }
 
@@ -39,23 +39,46 @@ footer {
   }
 
 .content {
+    opacity: 0.5;
     padding: 15px;
     text-align: left;
-    font-size: clamp(20px, 2.4vw, 45px);
+    font-size: clamp(18px, 1.23vw, 36px);
+    color: black;
     flex: 1 1 45%;
     box-sizing: border-box;
-    background-color: rgba(230, 189, 143, 0.7);
+    background-color: rgba(131, 84, 30, 0);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
     min-width: 220px;
+  }
+
+  .content:hover {
+    background-color: rgba(63, 43, 27, 0.7);
+    opacity: 1;
+    color: wheat;
+    transform: scale(1.1);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   }
 
   .content2 {
     padding: 15px;
-    text-align: right;
-    font-size: clamp(20px, 2.4vw, 45px);
+    opacity: 0.5;
+    text-align: left;
+    font-size: clamp(18px, 1.0vw, 36px);
     flex: 1 1 45%;
+    color: black;
     box-sizing: border-box;
-    background-color: rgba(230, 189, 143, 0.7);
-    min-width: 220px;
+    background-color: rgba(230, 189, 143, 0);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+    min-width: 320px;
+  }
+
+  .content2:hover {
+    background-color: rgba(63, 43, 27, 0.7);
+    opacity: 1;
+    visibility: visible;
+    color: wheat;
+    transform: scale(1.1);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   }
 
   .divider {

@@ -3,7 +3,7 @@ body {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(/WDProjBerylliumBeltranSia/website/Background1.png) center/cover no-repeat;
+	background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(/WDProjBerylliumBeltranSia/website-assets/Background1.png) center/cover no-repeat;
 	min-height: 100vh; 
 }
 

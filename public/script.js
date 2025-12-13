@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let quizForm = document.querySelector("#quizForm"); // match the form id in HTML
+    let quizForm = document.querySelector("#quizForm");
     if (quizForm) {
         quizForm.addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission
+            event.preventDefault(); 
             let quizScore = 0;
 
-            // Use local variables and ensure inputs exist
             let q1El = document.getElementById("question-block1");
             let question1Answer = q1El ? q1El.value.trim() : "";
             if (question1Answer)

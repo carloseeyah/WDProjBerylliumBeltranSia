@@ -2,7 +2,7 @@ body {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../website/Background1.png) center/cover no-repeat;
+	background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../website-assets/Background1.png) center/cover no-repeat;
 	min-height: 100vh; 
 }
 
@@ -302,11 +302,17 @@ footer {
     transform: scale(1.05);
   }
 
+  h1 {
+    color: wheat;
+    font-size: clamp(32px, 4vw, 64px);
+  }
+
   input[type="text"] {
     width: 60%;
     padding: 10px;
     font-size: clamp(16px, 2.6vw, 30px);
     margin-top: 0px;
+    margin-bottom: 20px;
     border: 2px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
@@ -314,6 +320,8 @@ footer {
 
   label {
     font-size: clamp(18px, 2.6vw, 36px);
+    background-color: rgba(63, 43, 27, 0.7);
+    color: wheat;
     display: block;
     margin-bottom: 10px;
   }
