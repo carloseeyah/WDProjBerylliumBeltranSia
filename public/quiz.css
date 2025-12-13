@@ -271,3 +271,50 @@ footer {
     background-color: rgba(230, 189, 143, 0.95);
     color: #fff;
   }
+
+  .question-block {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .quiz-form {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .submit-button {
+    font-size: clamp(16px, 2.6vw, 50px);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
+    border: 2px solid white;
+    border-style: hidden;
+    background-color: rgba(145, 106, 61, 0.7);
+    transition: all 0.5s ease;
+  }
+
+  .submit-button:hover {
+    background-color: rgba(230, 189, 143, 0.95);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: clamp(16px, 2.6vw, 30px);
+    margin-top: 0px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  label {
+    font-size: clamp(18px, 2.6vw, 36px);
+    display: block;
+    margin-bottom: 10px;
+  }
+
