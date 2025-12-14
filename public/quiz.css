@@ -278,6 +278,8 @@ footer {
   }
 
   .quiz-form {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
@@ -305,6 +307,8 @@ footer {
   h1 {
     color: wheat;
     font-size: clamp(32px, 4vw, 64px);
+    background-color: rgba(63, 43, 27, 0.7);
+    padding: 20px;
   }
 
   input[type="text"] {
@@ -321,8 +325,8 @@ footer {
   label {
     font-size: clamp(18px, 2.6vw, 36px);
     background-color: rgba(63, 43, 27, 0.7);
+    padding: 20px;
     color: wheat;
     display: block;
     margin-bottom: 10px;
   }
-

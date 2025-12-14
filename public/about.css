@@ -63,7 +63,7 @@ footer {
     padding: 15px;
     opacity: 0.5;
     text-align: left;
-    font-size: clamp(18px, 1.0vw, 36px);
+    font-size: clamp(18px, 1.1vw, 36px);
     flex: 1 1 45%;
     color: black;
     box-sizing: border-box;
