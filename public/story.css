@@ -43,6 +43,8 @@ footer {
     z-index: 20;
   }
 
+  /* Content boxes inside about section container */
+
 .about-section {
     display: flex;
     justify-content: space-between;
@@ -54,6 +56,8 @@ footer {
     padding: 1rem;
     flex-wrap: wrap;
   }
+  
+  /* Individual content box styling */
 
 .content {
     opacity: 0.5;
@@ -68,6 +72,8 @@ footer {
     min-width: 220px;
   }
 
+  /* Changes background and text color on hover to enhance readability */
+
   .content:hover {
     background-color: rgba(63, 43, 27, 0.7);
     opacity: 1;
@@ -75,6 +81,8 @@ footer {
     transform: scale(1.1);
     transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   }
+
+   /* Second content box styling */
 
   .content2 {
     padding: 15px;
@@ -98,6 +106,8 @@ footer {
     transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   }
 
+  /* Simple divider between content boxes */
+
   .divider {
     width: 10px;
     background-color: rgba(63, 43, 27);
@@ -105,6 +115,8 @@ footer {
     border-radius: 4px;
     min-height: 40vh;
   }
+
+  /*Pop-up menu for navigation buttons*/
 
   .back-menu {
     position: fixed;
@@ -119,6 +131,8 @@ footer {
     pointer-events: auto;
     transition: opacity 1s ease;
   }
+
+  /*Hides navigation buttons until hover*/
 
   .back-item {
     opacity: 0;
@@ -139,6 +153,8 @@ footer {
     background-color: rgba(230, 189, 143, 0.95);
     transform: translate(-50%, -50%) scale(1.03);
   }
+
+  /*Individual navigation button styling and positioning*/
 
   .Menu {
     position: fixed;

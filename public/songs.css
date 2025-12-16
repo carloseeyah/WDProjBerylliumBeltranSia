@@ -55,6 +55,7 @@ footer {
     margin-left: 0;
   }
 
+/* Hidden divider between content boxes for layout purposes*/
 
   .divider { display: none; }
 
@@ -64,6 +65,8 @@ footer {
     height: 90vh;
     background-color: rgba(63, 43, 27);
   }
+
+  /*Pop-up menu for navigation buttons*/
 
   .back-menu {
     position: fixed;
@@ -78,6 +81,8 @@ footer {
     pointer-events: auto;
     transition: opacity 1s ease;
   }
+
+  /*Hides navigation buttons until hover*/
 
   .back-item {
     opacity: 0;
@@ -98,6 +103,8 @@ footer {
     background-color: rgba(230, 189, 143, 0.95);
     transform: translate(-50%, -50%) scale(1.03);
   }
+
+  /*Individual navigation button styling and positioning*/
 
   .Menu {
     position: fixed;

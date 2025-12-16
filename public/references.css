@@ -24,45 +24,7 @@ footer {
     width: 100%;
   }
 
-.about-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: clamp(1rem, 3vw, 3rem);
-    max-width: min(1200px, 95%);
-    margin: 2rem auto;
-    box-sizing: border-box;
-    padding: 1rem;
-    flex-wrap: wrap;
-  }
-
-.content {
-    padding: 15px;
-    text-align: left;
-    font-size: clamp(20px, 2.4vw, 45px);
-    flex: 1 1 45%;
-    box-sizing: border-box;
-    background-color: rgba(230, 189, 143, 0.7);
-    min-width: 220px;
-  }
-
-  .content2 {
-    padding: 15px;
-    text-align: right;
-    font-size: clamp(20px, 2.4vw, 45px);
-    flex: 1 1 45%;
-    box-sizing: border-box;
-    background-color: rgba(230, 189, 143, 0.7);
-    min-width: 220px;
-  }
-
-  .divider {
-    width: 10px;
-    background-color: rgba(63, 43, 27);
-    align-self: stretch;
-    border-radius: 4px;
-    min-height: 40vh;
-  }
+  /*Pop-up menu for navigation buttons*/
 
   .back-menu {
     position: fixed;
@@ -77,6 +39,8 @@ footer {
     pointer-events: auto;
     transition: opacity 1s ease;
   }
+
+  /*Hides navigation buttons until hover*/
 
   .back-item {
     opacity: 0;
@@ -97,6 +61,8 @@ footer {
     background-color: rgba(230, 189, 143, 0.95);
     transform: translate(-50%, -50%) scale(1.03);
   }
+
+  /*Individual navigation button styling and positioning*/
 
   .Menu {
     position: fixed;

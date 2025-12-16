@@ -1,18 +1,39 @@
 document.addEventListener("DOMContentLoaded", function() {
     let quizForm = document.querySelector("#quizForm");
+
+    //Event listener for form submission
+
     if (quizForm) {
         quizForm.addEventListener("submit", function(event) {
             event.preventDefault(); 
+
+//Retreives answers and calculates score (for all 10 questions)
+
             let quizScore = 0;
 
+            //Retrieves answer from question block
+
             let q1El = document.getElementById("question-block1");
+
+            //Trim whitespace from answer
+
             let question1Answer = q1El ? q1El.value.trim() : "";
+
+            //Check if answer is not empty
+
             if (question1Answer)
                 {
+                    //Check if answer is correct
+
                     if (question1Answer == "The beast"){
+
+                        //add point to score
+
                         quizScore++;
                     }
                 }
+
+            //Repeat process for remaining questions
 
             let q2El = document.getElementById("question-block2");
             let question2Answer = q2El ? q2El.value.trim() : "";
@@ -91,11 +112,15 @@ document.addEventListener("DOMContentLoaded", function() {
             {
                         quizScore++;
             }
+
+            //Double check answers and score in console
             
             console.log('Quiz answers:', {
                 question1Answer, question2Answer, question3Answer, question4Answer, question5Answer, question6Answer, question7Answer, question8Answer, question9Answer, question10Answer
             });
             console.log('Quiz score before alert:', quizScore);
+
+            //Display the score to the user
             
         alert("Your score is: " + quizScore + "/10!");
         });
