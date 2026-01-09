@@ -15,6 +15,22 @@ main {
 	box-sizing: border-box;
 }
 
+header {
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+    background-color: rgba(63, 43, 27, 0.8);
+    color: #fff;
+  }
+
+  .title {
+    font-size: clamp(24px, 5vw, 48px);
+    margin: 0;
+  }
+
 footer {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
