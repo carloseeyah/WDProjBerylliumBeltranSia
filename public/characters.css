@@ -15,6 +15,22 @@ main {
 	box-sizing: border-box;
 }
 
+header {
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+    background-color: rgba(63, 43, 27, 0.8);
+    color: #fff;
+  }
+
+  .title {
+    font-size: clamp(24px, 5vw, 48px);
+    margin: 0;
+  }
+
 footer {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -32,8 +48,9 @@ footer {
     position: fixed;
     left: 10%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     height: 100vh;
+    min-width: clamp(120px, 18vw, 300px);
     display: block;
     padding: 10px;
     background-color: transparent;
@@ -48,13 +65,15 @@ footer {
     opacity: 0;
     transform: translateX(-12px) translateY(0);
     pointer-events: none;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: 0.25s;
     z-index: 30;
   }
 
   .back-menu:hover .back-item {
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: 0s;
     transform: translateX(0) translateY(0);
     pointer-events: auto;
   }
@@ -67,7 +86,7 @@ footer {
   /*Individual navigation button styling and positioning*/
 
   .Menu {
-    position: fixed;
+    position: absolute;
     left: 10%;
     top: 90%;
     transform: translate(-50%, -50%);
@@ -87,7 +106,7 @@ footer {
   }
 
   .Homepage {
-    position: fixed;
+    position: absolute;
     left: 10%;
     top: 78%;
     transform: translate(-50%, -50%);
@@ -107,7 +126,7 @@ footer {
   }
 
   .Quiz {
-    position: fixed;
+    position: absolute;
     left: 10%;
     top: 66%;
     transform: translate(-50%, -50%);
@@ -127,7 +146,7 @@ footer {
   }
 
   .Cast {
-    position: fixed;
+    position: absolute;
     left: 10%;
     top: 54%;
     transform: translate(-50%, -50%);
@@ -147,7 +166,7 @@ footer {
   }
 
   .About {
-    position: fixed;
+    position: absolute;
     left: 10%;
     top: 42%;
     transform: translate(-50%, -50%);
@@ -167,7 +186,7 @@ footer {
   }
 
   .Songs {
-    position: fixed;
+    position: absolute;
     left: 10%;
     top:30%;
     transform: translate(-50%, -50%);
@@ -187,7 +206,7 @@ footer {
   }
 
   .Story {
-    position: fixed;
+    position: absolute;
     left: 10%;
     top: 18%;
     transform: translate(-50%, -50%);
@@ -207,7 +226,7 @@ footer {
   }
 
   .Characters {
-    position: fixed;
+    position: absolute;
     left: 10%;
     top: 6%;
     transform: translate(-50%, -50%);
