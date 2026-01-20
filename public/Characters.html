@@ -12,38 +12,368 @@
 
 </head>
 
+<script>
+    function BenFunction() {
+        mirror1 = document.getElementById("mirror1");
+        mirror2 = document.getElementById("mirror2");
+        mirror3 = document.getElementById("mirror3");
+        mirror4 = document.getElementById("mirror4");
+        mirror5 = document.getElementById("mirror5");
+        infopanel = document.getElementById("infopanel-ben");
+        label1 = document.querySelector(".mirror-label1");
+        label2 = document.querySelector(".mirror-label2");
+        label3 = document.querySelector(".mirror-label3");
+        label4 = document.querySelector(".mirror-label4");
+        label5 = document.querySelector(".mirror-label5");
+
+        if(mirror2.style.opacity === "0") {
+            mirror2.style.opacity = "100";
+            mirror3.style.opacity = "100";
+            mirror4.style.opacity = "100";
+            mirror5.style.opacity = "100";
+
+            label1.style.opacity = "100";
+            label2.style.opacity = "100";
+            label3.style.opacity = "100";
+            label4.style.opacity = "100";
+            label5.style.opacity = "100";
+
+            mirror1.style.transition = "transform 0.5s ease";
+            mirror1.style.transform = "translate(-0%, -70%) scale(1)";
+            infopanel.style.display = "none";
+            return;
+        }
+
+        mirror2.style.opacity = "0";
+        mirror3.style.opacity = "0";
+        mirror4.style.opacity = "0";
+        mirror5.style.opacity = "0";
+
+        label1.style.opacity = "0";
+        label2.style.opacity = "0";
+        label3.style.opacity = "0";
+        label4.style.opacity = "0";
+        label5.style.opacity = "0";
+
+        mirror2.style.transition = "opacity 0.5s ease";
+        mirror3.style.transition = "opacity 0.5s ease";
+        mirror4.style.transition = "opacity 0.5s ease";
+        mirror5.style.transition = "opacity 0.5s ease";
+
+        mirror1.style.transition = "transform 0.5s ease";
+        mirror1.style.transform = "translate(-0%, 0%) scale(2)";
+        infopanel.style.display = "block";
+    }
+
+    function CarlosFunction() {
+        mirror1 = document.getElementById("mirror1");
+        mirror2 = document.getElementById("mirror2");
+        mirror3 = document.getElementById("mirror3");
+        mirror4 = document.getElementById("mirror4");
+        mirror5 = document.getElementById("mirror5");
+        infopanel = document.getElementById("infopanel-carlos");
+        label1 = document.querySelector(".mirror-label1");
+        label2 = document.querySelector(".mirror-label2");
+        label3 = document.querySelector(".mirror-label3");
+        label4 = document.querySelector(".mirror-label4");
+        label5 = document.querySelector(".mirror-label5");
+
+        if(mirror1.style.opacity === "0") {
+            mirror1.style.opacity = "100";
+            mirror3.style.opacity = "100";
+            mirror4.style.opacity = "100";
+            mirror5.style.opacity = "100";
+
+            label1.style.opacity = "100";
+            label2.style.opacity = "100";
+            label3.style.opacity = "100";
+            label4.style.opacity = "100";
+            label5.style.opacity = "100";
+
+            mirror2.style.transition = "transform 0.5s ease";
+            mirror2.style.transform = "translate(-0%, 50%) scale(1)";
+            infopanel.style.display = "none";
+            return;
+        }
+
+        mirror1.style.opacity = "0";
+        mirror3.style.opacity = "0";
+        mirror4.style.opacity = "0";
+        mirror5.style.opacity = "0";
+
+        label1.style.opacity = "0";
+        label2.style.opacity = "0";
+        label3.style.opacity = "0";
+        label4.style.opacity = "0";
+        label5.style.opacity = "0";
+
+        mirror1.style.transition = "opacity 0.5s ease";
+        mirror3.style.transition = "opacity 0.5s ease";
+        mirror4.style.transition = "opacity 0.5s ease";
+        mirror5.style.transition = "opacity 0.5s ease";
+
+        mirror2.style.transition = "transform 0.5s ease";
+        mirror2.style.transform = "translate(-120%, 0%) scale(2)";
+        infopanel.style.display = "block";
+    }
+
+    function MalFunction() {
+        mirror1 = document.getElementById("mirror1");
+        mirror2 = document.getElementById("mirror2");
+        mirror3 = document.getElementById("mirror3");
+        mirror4 = document.getElementById("mirror4");
+        mirror5 = document.getElementById("mirror5");
+        infopanel = document.getElementById("infopanel-mal");
+        label1 = document.querySelector(".mirror-label1");
+        label2 = document.querySelector(".mirror-label2");
+        label3 = document.querySelector(".mirror-label3");
+        label4 = document.querySelector(".mirror-label4");
+        label5 = document.querySelector(".mirror-label5");
+
+        if(mirror1.style.opacity === "0") {
+            mirror1.style.opacity = "100";
+            mirror2.style.opacity = "100";
+            mirror4.style.opacity = "100";
+            mirror5.style.opacity = "100";
+
+            label1.style.opacity = "100";
+            label2.style.opacity = "100";
+            label3.style.opacity = "100";
+            label4.style.opacity = "100";
+            label5.style.opacity = "100";
+
+            mirror3.style.transition = "transform 0.5s ease";
+            mirror3.style.transform = "translate(-0%, -70%) scale(1)";
+            infopanel.style.display = "none";
+            return;
+        }
+
+        mirror1.style.opacity = "0";
+        mirror2.style.opacity = "0";
+        mirror4.style.opacity = "0";
+        mirror5.style.opacity = "0";
+
+        label1.style.opacity = "0";
+        label2.style.opacity = "0";
+        label3.style.opacity = "0";
+        label4.style.opacity = "0";
+        label5.style.opacity = "0";
+
+        mirror1.style.transition = "opacity 0.5s ease";
+        mirror2.style.transition = "opacity 0.5s ease";
+        mirror4.style.transition = "opacity 0.5s ease";
+        mirror5.style.transition = "opacity 0.5s ease";
+
+        mirror3.style.transition = "transform 0.5s ease";
+        mirror3.style.transform = "translate(-250%, -0%) scale(2)";
+        infopanel.style.display = "block";
+    }
+
+    function JayFunction() {
+        mirror1 = document.getElementById("mirror1");
+        mirror2 = document.getElementById("mirror2");
+        mirror3 = document.getElementById("mirror3");
+        mirror4 = document.getElementById("mirror4");
+        mirror5 = document.getElementById("mirror5");
+        infopanel = document.getElementById("infopanel-jay");
+        label1 = document.querySelector(".mirror-label1");
+        label2 = document.querySelector(".mirror-label2");
+        label3 = document.querySelector(".mirror-label3");
+        label4 = document.querySelector(".mirror-label4");
+        label5 = document.querySelector(".mirror-label5");
+
+        if(mirror1.style.opacity === "0") {
+            mirror1.style.opacity = "100";
+            mirror2.style.opacity = "100";
+            mirror3.style.opacity = "100";
+            mirror5.style.opacity = "100";
+
+            label1.style.opacity = "100";
+            label2.style.opacity = "100";
+            label3.style.opacity = "100";
+            label4.style.opacity = "100";
+            label5.style.opacity = "100";
+
+            mirror4.style.transition = "transform 0.5s ease";
+            mirror4.style.transform = "translate(-0%, 50%) scale(1)";
+            infopanel.style.display = "none";
+            return;
+        }
+
+        mirror1.style.opacity = "0";
+        mirror2.style.opacity = "0";
+        mirror3.style.opacity = "0";
+        mirror5.style.opacity = "0";
+
+        label1.style.opacity = "0";
+        label2.style.opacity = "0";
+        label3.style.opacity = "0";
+        label4.style.opacity = "0";
+        label5.style.opacity = "0";
+
+        mirror1.style.transition = "opacity 0.5s ease";
+        mirror2.style.transition = "opacity 0.5s ease";
+        mirror3.style.transition = "opacity 0.5s ease";
+        mirror5.style.transition = "opacity 0.5s ease";
+
+        mirror4.style.transition = "transform 0.5s ease";
+        mirror4.style.transform = "translate(-380%, 0%) scale(2)";
+        infopanel.style.display = "block";
+    }
+
+    function EvieFunction() {
+        mirror1 = document.getElementById("mirror1");
+        mirror2 = document.getElementById("mirror2");
+        mirror3 = document.getElementById("mirror3");
+        mirror4 = document.getElementById("mirror4");
+        mirror5 = document.getElementById("mirror5");
+        infopanel = document.getElementById("infopanel-evie");
+        label1 = document.querySelector(".mirror-label1");
+        label2 = document.querySelector(".mirror-label2");
+        label3 = document.querySelector(".mirror-label3");
+        label4 = document.querySelector(".mirror-label4");
+        label5 = document.querySelector(".mirror-label5");
+
+        if(mirror1.style.opacity === "0") {
+            mirror1.style.opacity = "100";
+            mirror2.style.opacity = "100";
+            mirror3.style.opacity = "100";
+            mirror4.style.opacity = "100";
+
+            label1.style.opacity = "100";
+            label2.style.opacity = "100";
+            label3.style.opacity = "100";
+            label4.style.opacity = "100";
+            label5.style.opacity = "100";
+
+            mirror5.style.transition = "transform 0.5s ease";
+            mirror5.style.transform = "translate(-0%, -70%) scale(1)";
+            infopanel.style.display = "none";
+            return;
+        }
+
+        mirror1.style.opacity = "0";
+        mirror2.style.opacity = "0";
+        mirror3.style.opacity = "0";
+        mirror4.style.opacity = "0";
+
+        label1.style.opacity = "0";
+        label2.style.opacity = "0";
+        label3.style.opacity = "0";
+        label4.style.opacity = "0";
+        label5.style.opacity = "0";
+
+        mirror1.style.transition = "opacity 0.5s ease";
+        mirror2.style.transition = "opacity 0.5s ease";
+        mirror3.style.transition = "opacity 0.5s ease";
+        mirror4.style.transition = "opacity 0.5s ease";
+
+        mirror5.style.transition = "transform 0.5s ease";
+        mirror5.style.transform = "translate(-510%, 0%) scale(2)";
+        infopanel.style.display = "block";
+    }
+</script>
+
 <body>
     <main>
 
     <header>
         <h1 class="title">Rotten To The Core: The Characters</h1>
+        <div class="instruction-box">
+            <p>Click on any mirror to learn more about each character</p>
+        </div>
     </header>   
     
     <div class="mirrors-container">
         <div class="mirror-wrap">
-            <img class="mirror1" src="../website-assets/Mirror.png" alt="Mirror 1">
-            <span class="mirror-name-top">Ben <br>The love interest of Mal<br>and heir to the throne of king of Auradon.</span>
+            <img id=mirror1 class="mirror1" src="../website-assets/Mirror.png" alt="Mirror 1" onclick="BenFunction()">
             <img class="mirror-image-top" src="../website-assets/ben.png" alt="Ben">
+            <span class="mirror-label1">Ben</span>
         </div>
         <div class="mirror-wrap">
-            <img class="mirror2" src="../website-assets/Mirror.png" alt="Mirror 2">
-            <span class="mirror-name-bottom">Carlos <br>One of the main 4 characters,<br>known for his optimism and humor.</span>
+            <img id=mirror2 class="mirror2" src="../website-assets/Mirror.png" alt="Mirror 2" onclick="CarlosFunction()">
             <img class="mirror-image-bottom" src="../website-assets/carlos.png" alt="Carlos">
+            <span class="mirror-label2">Carlos</span>
         </div>
         <div class="mirror-wrap">
-            <img class="mirror3" src="../website-assets/Mirror.png" alt="Mirror 3">
-            <span class="mirror-name-top">Mal <br>One of the main 4 characters,<br>known for her powerful magic and strategic.</span>
+            <img id=mirror3 class="mirror3" src="../website-assets/Mirror.png" alt="Mirror 3" onclick="MalFunction()">
             <img class="mirror-image-top" src="../website-assets/mal.png" alt="Mal">
+            <span class="mirror-label3">Mal</span>
         </div>
         <div class="mirror-wrap">
-            <img class="mirror4" src="../website-assets/Mirror.png" alt="Mirror 4">
-            <span class="mirror-name-bottom">Jay <br>One of the main 4 characters,<br>known for his strength, bravery, and courage.</span>
+            <img id=mirror4 class="mirror4" src="../website-assets/Mirror.png" alt="Mirror 4" onclick="JayFunction()">
             <img class="mirror-image-bottom" src="../website-assets/jay.png" alt="Jay">
+            <span class="mirror-label4">Jay</span>
         </div>
         <div class="mirror-wrap">
-            <img class="mirror5" src="../website-assets/Mirror.png" alt="Mirror 5">
-            <span class="mirror-name-top">Evie <br>One of the main 4 characters,<br>known for her wisdom, fashion, and beauty.</span>
+            <img id=mirror5 class="mirror5" src="../website-assets/Mirror.png" alt="Mirror 5" onclick="EvieFunction()">
             <img class="mirror-image-top" src="../website-assets/evie.png" alt="Evie">
+            <span class="mirror-label5">Evie</span>
+        </div>
+    </div>
+
+    <div id="infopanel-ben" class="info-panel">
+        <div class="info-panel-content">
+            <button class="close-btn" onclick="BenFunction()">×</button>
+            <div class="character-image-container">
+                <img src="../website-assets/ben.png" alt="Ben" class="character-image">
+            </div>
+            <div class="character-info">
+                <h2>Ben</h2>
+                <p>Ben, the prince of Auradon is the next heir to the throne as king. He plays as the love interest of Mal, testing her wits and heart for love and eventually looking to marry her.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="infopanel-carlos" class="info-panel">
+        <div class="info-panel-content">
+            <button class="close-btn" onclick="CarlosFunction()">×</button>
+            <div class="character-image-container">
+                <img src="../website-assets/carlos.png" alt="Carlos" class="character-image">
+            </div>
+            <div class="character-info">
+                <h2>Carlos</h2>
+                <p>The son of Cruella De Vil. Initially having an irrational fear of canine, Carlos' character progresses and overcomes his fear with a new dog bestfriend, Dude.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="infopanel-mal" class="info-panel">
+        <div class="info-panel-content">
+            <button class="close-btn" onclick="MalFunction()">×</button>
+            <div class="character-image-container">
+                <img src="../website-assets/mal.png" alt="Mal" class="character-image">
+            </div>
+            <div class="character-info">
+                <h2>Mal</h2>
+                <p>The main protagonist of the show and the daughter of Malificent. She serves as the team's leader, initiating the plans and execution for their plan to steal the Fairy Godmother Wand.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="infopanel-jay" class="info-panel">
+        <div class="info-panel-content">
+            <button class="close-btn" onclick="JayFunction()">×</button>
+            <div class="character-image-container">
+                <img src="../website-assets/jay.png" alt="Jay" class="character-image">
+            </div>
+            <div class="character-info">
+                <h2>Jay</h2>
+                <p>The son of Jafar and the brawns and charm of the team. He is handsome, sneaky, mischievous, and becomes known for his athleticism as a star player on the tourney team in Auradon Prep. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="infopanel-evie" class="info-panel">
+        <div class="info-panel-content">
+            <button class="close-btn" onclick="EvieFunction()">×</button>
+            <div class="character-image-container">
+                <img src="../website-assets/evie.png" alt="Evie" class="character-image">
+            </div>
+            <div class="character-info">
+                <h2>Evie</h2>
+                <p>The daughter of the evil queen. The beauty and brains of the team. With her mother's Magic Mirror, she uses it to help her and her team carry out their parents' evil plan.</p>
+            </div>
         </div>
     </div>
 

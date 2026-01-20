@@ -12,38 +12,368 @@
 
 </head>
 
+<script>
+    function MitchellFunction() {
+        mirror1 = document.getElementById("mirror1");
+        mirror2 = document.getElementById("mirror2");
+        mirror3 = document.getElementById("mirror3");
+        mirror4 = document.getElementById("mirror4");
+        mirror5 = document.getElementById("mirror5");
+        infopanel = document.getElementById("infopanel-ben");
+        label1 = document.querySelector(".mirror-label1");
+        label2 = document.querySelector(".mirror-label2");
+        label3 = document.querySelector(".mirror-label3");
+        label4 = document.querySelector(".mirror-label4");
+        label5 = document.querySelector(".mirror-label5");
+
+        if(mirror2.style.opacity === "0") {
+            mirror2.style.opacity = "100";
+            mirror3.style.opacity = "100";
+            mirror4.style.opacity = "100";
+            mirror5.style.opacity = "100";
+
+            label1.style.opacity = "100";
+            label2.style.opacity = "100";
+            label3.style.opacity = "100";
+            label4.style.opacity = "100";
+            label5.style.opacity = "100";
+
+            mirror1.style.transition = "transform 0.5s ease";
+            mirror1.style.transform = "translate(-0%, -70%) scale(1)";
+            infopanel.style.display = "none";
+            return;
+        }
+
+        mirror2.style.opacity = "0";
+        mirror3.style.opacity = "0";
+        mirror4.style.opacity = "0";
+        mirror5.style.opacity = "0";
+
+        label1.style.opacity = "0";
+        label2.style.opacity = "0";
+        label3.style.opacity = "0";
+        label4.style.opacity = "0";
+        label5.style.opacity = "0";
+
+        mirror2.style.transition = "opacity 0.5s ease";
+        mirror3.style.transition = "opacity 0.5s ease";
+        mirror4.style.transition = "opacity 0.5s ease";
+        mirror5.style.transition = "opacity 0.5s ease";
+
+        mirror1.style.transition = "transform 0.5s ease";
+        mirror1.style.transform = "translate(-0%, 0%) scale(2)";
+        infopanel.style.display = "block";
+    }
+
+    function CameronFunction() {
+        mirror1 = document.getElementById("mirror1");
+        mirror2 = document.getElementById("mirror2");
+        mirror3 = document.getElementById("mirror3");
+        mirror4 = document.getElementById("mirror4");
+        mirror5 = document.getElementById("mirror5");
+        infopanel = document.getElementById("infopanel-carlos");
+        label1 = document.querySelector(".mirror-label1");
+        label2 = document.querySelector(".mirror-label2");
+        label3 = document.querySelector(".mirror-label3");
+        label4 = document.querySelector(".mirror-label4");
+        label5 = document.querySelector(".mirror-label5");
+
+        if(mirror1.style.opacity === "0") {
+            mirror1.style.opacity = "100";
+            mirror3.style.opacity = "100";
+            mirror4.style.opacity = "100";
+            mirror5.style.opacity = "100";
+
+            label1.style.opacity = "100";
+            label2.style.opacity = "100";
+            label3.style.opacity = "100";
+            label4.style.opacity = "100";
+            label5.style.opacity = "100";
+
+            mirror2.style.transition = "transform 0.5s ease";
+            mirror2.style.transform = "translate(-0%, 50%) scale(1)";
+            infopanel.style.display = "none";
+            return;
+        }
+
+        mirror1.style.opacity = "0";
+        mirror3.style.opacity = "0";
+        mirror4.style.opacity = "0";
+        mirror5.style.opacity = "0";
+
+        label1.style.opacity = "0";
+        label2.style.opacity = "0";
+        label3.style.opacity = "0";
+        label4.style.opacity = "0";
+        label5.style.opacity = "0";
+
+        mirror1.style.transition = "opacity 0.5s ease";
+        mirror3.style.transition = "opacity 0.5s ease";
+        mirror4.style.transition = "opacity 0.5s ease";
+        mirror5.style.transition = "opacity 0.5s ease";
+
+        mirror2.style.transition = "transform 0.5s ease";
+        mirror2.style.transform = "translate(-120%, 0%) scale(2)";
+        infopanel.style.display = "block";
+    }
+
+    function DoveFunction() {
+        mirror1 = document.getElementById("mirror1");
+        mirror2 = document.getElementById("mirror2");
+        mirror3 = document.getElementById("mirror3");
+        mirror4 = document.getElementById("mirror4");
+        mirror5 = document.getElementById("mirror5");
+        infopanel = document.getElementById("infopanel-mal");
+        label1 = document.querySelector(".mirror-label1");
+        label2 = document.querySelector(".mirror-label2");
+        label3 = document.querySelector(".mirror-label3");
+        label4 = document.querySelector(".mirror-label4");
+        label5 = document.querySelector(".mirror-label5");
+
+        if(mirror1.style.opacity === "0") {
+            mirror1.style.opacity = "100";
+            mirror2.style.opacity = "100";
+            mirror4.style.opacity = "100";
+            mirror5.style.opacity = "100";
+
+            label1.style.opacity = "100";
+            label2.style.opacity = "100";
+            label3.style.opacity = "100";
+            label4.style.opacity = "100";
+            label5.style.opacity = "100";
+
+            mirror3.style.transition = "transform 0.5s ease";
+            mirror3.style.transform = "translate(-0%, -70%) scale(1)";
+            infopanel.style.display = "none";
+            return;
+        }
+
+        mirror1.style.opacity = "0";
+        mirror2.style.opacity = "0";
+        mirror4.style.opacity = "0";
+        mirror5.style.opacity = "0";
+
+        label1.style.opacity = "0";
+        label2.style.opacity = "0";
+        label3.style.opacity = "0";
+        label4.style.opacity = "0";
+        label5.style.opacity = "0";
+
+        mirror1.style.transition = "opacity 0.5s ease";
+        mirror2.style.transition = "opacity 0.5s ease";
+        mirror4.style.transition = "opacity 0.5s ease";
+        mirror5.style.transition = "opacity 0.5s ease";
+
+        mirror3.style.transition = "transform 0.5s ease";
+        mirror3.style.transform = "translate(-250%, -0%) scale(2)";
+        infopanel.style.display = "block";
+    }
+
+    function BoobooFunction() {
+        mirror1 = document.getElementById("mirror1");
+        mirror2 = document.getElementById("mirror2");
+        mirror3 = document.getElementById("mirror3");
+        mirror4 = document.getElementById("mirror4");
+        mirror5 = document.getElementById("mirror5");
+        infopanel = document.getElementById("infopanel-jay");
+        label1 = document.querySelector(".mirror-label1");
+        label2 = document.querySelector(".mirror-label2");
+        label3 = document.querySelector(".mirror-label3");
+        label4 = document.querySelector(".mirror-label4");
+        label5 = document.querySelector(".mirror-label5");
+
+        if(mirror1.style.opacity === "0") {
+            mirror1.style.opacity = "100";
+            mirror2.style.opacity = "100";
+            mirror3.style.opacity = "100";
+            mirror5.style.opacity = "100";
+
+            label1.style.opacity = "100";
+            label2.style.opacity = "100";
+            label3.style.opacity = "100";
+            label4.style.opacity = "100";
+            label5.style.opacity = "100";
+
+            mirror4.style.transition = "transform 0.5s ease";
+            mirror4.style.transform = "translate(-0%, 50%) scale(1)";
+            infopanel.style.display = "none";
+            return;
+        }
+
+        mirror1.style.opacity = "0";
+        mirror2.style.opacity = "0";
+        mirror3.style.opacity = "0";
+        mirror5.style.opacity = "0";
+
+        label1.style.opacity = "0";
+        label2.style.opacity = "0";
+        label3.style.opacity = "0";
+        label4.style.opacity = "0";
+        label5.style.opacity = "0";
+
+        mirror1.style.transition = "opacity 0.5s ease";
+        mirror2.style.transition = "opacity 0.5s ease";
+        mirror3.style.transition = "opacity 0.5s ease";
+        mirror5.style.transition = "opacity 0.5s ease";
+
+        mirror4.style.transition = "transform 0.5s ease";
+        mirror4.style.transform = "translate(-380%, 0%) scale(2)";
+        infopanel.style.display = "block";
+    }
+
+    function SofiaFunction() {
+        mirror1 = document.getElementById("mirror1");
+        mirror2 = document.getElementById("mirror2");
+        mirror3 = document.getElementById("mirror3");
+        mirror4 = document.getElementById("mirror4");
+        mirror5 = document.getElementById("mirror5");
+        infopanel = document.getElementById("infopanel-evie");
+        label1 = document.querySelector(".mirror-label1");
+        label2 = document.querySelector(".mirror-label2");
+        label3 = document.querySelector(".mirror-label3");
+        label4 = document.querySelector(".mirror-label4");
+        label5 = document.querySelector(".mirror-label5");
+
+        if(mirror1.style.opacity === "0") {
+            mirror1.style.opacity = "100";
+            mirror2.style.opacity = "100";
+            mirror3.style.opacity = "100";
+            mirror4.style.opacity = "100";
+
+            label1.style.opacity = "100";
+            label2.style.opacity = "100";
+            label3.style.opacity = "100";
+            label4.style.opacity = "100";
+            label5.style.opacity = "100";
+
+            mirror5.style.transition = "transform 0.5s ease";
+            mirror5.style.transform = "translate(-0%, -70%) scale(1)";
+            infopanel.style.display = "none";
+            return;
+        }
+
+        mirror1.style.opacity = "0";
+        mirror2.style.opacity = "0";
+        mirror3.style.opacity = "0";
+        mirror4.style.opacity = "0";
+
+        label1.style.opacity = "0";
+        label2.style.opacity = "0";
+        label3.style.opacity = "0";
+        label4.style.opacity = "0";
+        label5.style.opacity = "0";
+
+        mirror1.style.transition = "opacity 0.5s ease";
+        mirror2.style.transition = "opacity 0.5s ease";
+        mirror3.style.transition = "opacity 0.5s ease";
+        mirror4.style.transition = "opacity 0.5s ease";
+
+        mirror5.style.transition = "transform 0.5s ease";
+        mirror5.style.transform = "translate(-510%, 0%) scale(2)";
+        infopanel.style.display = "block";
+    }
+</script>
+
 <body>
     <main>
 
-     <header>
+    <header>
         <h1 class="title">Rotten To The Core: The Cast</h1>
-     </header>   
+        <div class="instruction-box">
+            <p>Click on any mirror to learn more about each cast member</p>
+        </div>
+    </header>   
     
     <div class="mirrors-container">
         <div class="mirror-wrap">
-            <img class="mirror1" src="../website-assets/Mirror.png" alt="Mirror 1">
-            <span class="mirror-name-top">Mitchell Hope <br>Plays Ben, son of the Beast and Princess Belle <br> who comes from Beauty and the Beast</span>
+            <img id=mirror1 class="mirror1" src="../website-assets/Mirror.png" alt="Mirror 1" onclick="MitchellFunction()">
             <img class="mirror-image-top" src="../website-assets/mitchell hope.png" alt="Mitchell Hope">
+            <span class="mirror-label1">Mitchell Hope</span>
         </div>
         <div class="mirror-wrap">
-            <img class="mirror2" src="../website-assets/Mirror.png" alt="Mirror 2">
-            <span class="mirror-name-bottom">Cameron Boyce <br>Plays Carlos, the son of Cruella De Vil<br>who comes from the cartoon, 101 Dalmatians</span>
+            <img id=mirror2 class="mirror2" src="../website-assets/Mirror.png" alt="Mirror 2" onclick="CameronFunction()">
             <img class="mirror-image-bottom" src="../website-assets/cameron boyce.png" alt="Cameron Boyce">
+            <span class="mirror-label2">Cameron Boyce</span>
         </div>
         <div class="mirror-wrap">
-            <img class="mirror3" src="../website-assets/Mirror.png" alt="Mirror 3">
-            <span class="mirror-name-top">Dove Cameron <br>Plays Mal, the Daughter of Malificent<br>who comes from the cartoon, Malificent</span>
+            <img id=mirror3 class="mirror3" src="../website-assets/Mirror.png" alt="Mirror 3" onclick="DoveFunction()">
             <img class="mirror-image-top" src="../website-assets/dove cameron.png" alt="Dove Cameron">
+            <span class="mirror-label3">Dove Cameron</span>
         </div>
         <div class="mirror-wrap">
-            <img class="mirror4" src="../website-assets/Mirror.png" alt="Mirror 4">
-            <span class="mirror-name-bottom">Booboo Stewart <br>Plays Jay, the son of Jafar <br>who comes from the cartoon, Aladdin</span>
+            <img id=mirror4 class="mirror4" src="../website-assets/Mirror.png" alt="Mirror 4" onclick="BoobooFunction()">
             <img class="mirror-image-bottom" src="../website-assets/booboo stewart.png" alt="Booboo Stewart">
+            <span class="mirror-label4">Booboo Stewart</span>
         </div>
         <div class="mirror-wrap">
-            <img class="mirror5" src="../website-assets/Mirror.png" alt="Mirror 5">
-            <span class="mirror-name-top">Sofia Carson <br>Plays Evie, the daughter of the Evil Queen<br>who comes from the cartoon, Snow White</span>
+            <img id=mirror5 class="mirror5" src="../website-assets/Mirror.png" alt="Mirror 5" onclick="SofiaFunction()">
             <img class="mirror-image-top" src="../website-assets/sofia carson.png" alt="Sofia Carson">
+            <span class="mirror-label5">Sofia Carson</span>
+        </div>
+    </div>
+
+    <div id="infopanel-ben" class="info-panel">
+        <div class="info-panel-content">
+            <button class="close-btn" onclick="MitchellFunction()">×</button>
+            <div class="character-image-container">
+                <img src="../website-assets/mitchell hope.png" alt="mitchell hope" class="character-image">
+            </div>
+            <div class="character-info">
+                <h2>Mitchell Hope</h2>
+                <p>Plays the character of Ben. He is an Australian actor, starring in multiple films such as Love You Like that, Never Tear Us Apart, and more.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="infopanel-carlos" class="info-panel">
+        <div class="info-panel-content">
+            <button class="close-btn" onclick="CameronFunction()">×</button>
+            <div class="character-image-container">
+                <img src="../website-assets/cameron boyce.png" alt="cameron boyce" class="character-image">
+            </div>
+            <div class="character-info">
+                <h2>Cameron Boyce</h2>
+                <p>Played the character of Carlos. Beginning his career as a child actor, he has appeared in multiple shows like Grown Ups and Jessie. <br><br>RIP May 28, 1999 - July 6, 2019</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="infopanel-mal" class="info-panel">
+        <div class="info-panel-content">
+            <button class="close-btn" onclick="DoveFunction()">×</button>
+            <div class="character-image-container">
+                <img src="../website-assets/dove cameron.png" alt="dove cameron" class="character-image">
+            </div>
+            <div class="character-info">
+                <h2>Dove Cameron</h2>
+                <p>Plays the roles of Mal. She rose to fame for her dual role in the Disney Channel's comedy series, Liv and Maddie. Now, she is a also a singer and has starred in many more films.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="infopanel-jay" class="info-panel">
+        <div class="info-panel-content">
+            <button class="close-btn" onclick="BoobooFunction()">×</button>
+            <div class="character-image-container">
+                <img src="../website-assets/booboo stewart.png" alt="booboo stewart" class="character-image">
+            </div>
+            <div class="character-info">
+                <h2>Booboo Stewart</h2>
+                <p>Plays the character of Jay. Besides his Descendants role, he is also well known for starring in The Twilight Saga, X-Men: Days of Future Past, and more.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="infopanel-evie" class="info-panel">
+        <div class="info-panel-content">
+            <button class="close-btn" onclick="SofiaFunction()">×</button>
+            <div class="character-image-container">
+                <img src="../website-assets/sofia carson.png" alt="sofia carson" class="character-image">
+            </div>
+            <div class="character-info">
+                <h2>Sofia Carson</h2>
+                <p>Plays the role of Evie. Beyond acting, she is also an artist in which she has released many covers and singles. Furthermore, she has starred in more films such as My Oxford Year and Purple Hearts.</p>
+            </div>
         </div>
     </div>
 

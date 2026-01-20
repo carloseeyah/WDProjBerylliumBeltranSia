@@ -24,11 +24,30 @@ header {
     padding: 1rem;
     background-color: rgba(63, 43, 27, 0.8);
     color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
   .title {
     font-size: clamp(24px, 5vw, 48px);
     margin: 0;
+    white-space: nowrap;
+  }
+
+  .instruction-box {
+    padding: 10px 15px;
+    background-color: rgba(230, 189, 143, 0.2);
+    border-left: 4px solid rgba(230, 189, 143, 0.8);
+    border-radius: 4px;
+    width: clamp(200px, 20vw, 300px);
+  }
+
+  .instruction-box p {
+    margin: 0;
+    font-size: clamp(12px, 1.5vw, 16px);
+    color: rgba(230, 189, 143, 0.95);
+    font-style: italic;
   }
 
 footer {
@@ -262,44 +281,53 @@ footer {
   .mirrors-container {
     align-items: center;
     justify-content: center;
-    display: flex;
   }
 
   /*Individual mirror sizing*/
 
   .mirror1 {
+    opacity: 100;
     width: 225px;
     height: 300px;
     margin: 20px;
     transform: translate(-0%, -70%);
+    transition: opacity 0.5s ease;
   }
 
     .mirror2 {
-    width: 225px;
-    height: 300px;
-    margin: 20px;
-    transform: translate(-0%, 50%);
+      opacity: 100;
+      width: 225px;
+      height: 300px;
+      margin: 20px;
+      transform: translate(-0%, 50%);
+      transition: opacity 0.5s ease;
   }
 
     .mirror3 {
-    width: 225px;
-    height: 300px;
-    margin: 20px;
-    transform: translate(-0%, -70%);
+      opacity: 100;
+      width: 225px;
+      height: 300px;
+      margin: 20px;
+      transform: translate(-0%, -70%);
+      transition: opacity 0.5s ease;
   }
 
     .mirror4 {
-    width: 225px;
-    height: 300px;
-    margin: 20px;
-    transform: translate(-0%, 50%);
+      opacity: 100;
+      width: 225px;
+      height: 300px;
+      margin: 20px;
+      transform: translate(-0%, 50%);
+      transition: opacity 0.5s ease;
   }
 
     .mirror5 {
-    width: 225px;
-    height: 300px;
-    margin: 20px;
-    transform: translate(-0%, -70%);
+      opacity: 100;
+      width: 225px;
+      height: 300px;
+      margin: 20px;
+      transform: translate(-0%, -70%);
+      transition: opacity 0.5s ease;
   }
 
   /*Mirror gallery layouting and styling*/
@@ -321,7 +349,7 @@ footer {
 
     /*Top mirrors text positioning and styling*/
 
-    .mirror-wrap .mirror-name-top {
+   .mirror-wrap .mirror-name-top {
       position: absolute;
       left: 50%;
       bottom: 102%;
@@ -352,9 +380,51 @@ footer {
       z-index: 50;
     }
 
+    .mirror-label1 {
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 25px;
+      color: #4d3424;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      pointer-events: none;
+    }
+
+    .mirror-label3 {
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 25px;
+      color: #4d3424;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      pointer-events: none;
+    }
+
+    .mirror-label5 {
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 25px;
+      color: #4d3424;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      pointer-events: none;
+    }
+
     /*Make text visible on hover/focus*/
 
-    .mirror-wrap:hover .mirror-name-top,
+    /* .mirror-wrap:hover .mirror-name-top,
     .mirror-wrap:focus-within .mirror-name-top {
       opacity: 1;
       visibility: visible;
@@ -372,7 +442,7 @@ footer {
 
     /*Bottom mirrors text positioning and styling*/
 
-    .mirror-wrap .mirror-name-bottom {
+   .mirror-wrap .mirror-name-bottom {
       position: absolute;
       left: 50%;
       bottom: -4%;
@@ -403,10 +473,37 @@ footer {
       z-index: 50;
     }
 
+        .mirror-label2 {
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 25px;
+      color: #4d3424;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      pointer-events: none;
+    }
+
+    .mirror-label4 {
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 25px;
+      color: #4d3424;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      pointer-events: none;
+    }
+
     /*Make text visible on hover/focus*/
 
-    .mirror-wrap:hover .mirror-name-bottom,
-    .mirror-wrap:focus-within .mirror-name-bottom {
+   /* .mirror-wrap:focus-within .mirror-name-bottom {
       opacity: 1;
       visibility: visible;
       transform: translateX(-50%) translateY(0) scale(1.3);
@@ -426,4 +523,119 @@ footer {
     .mirror-wrap:hover {
       transition: transform 0.5s ease;
       transform: translate(0%, 0%) scale(1.1);
+    }
+
+    /* Character Info Panel */
+    .info-panel {
+      position: fixed;
+      right: 40%;
+      top: 50%;
+      transform: translate(50%, -50%);
+      width: clamp(600px, 80vw, 1000px);
+      max-height: 100vh;
+      background-color: rgba(63, 43, 27, 0.95);
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 50;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .info-panel[style*="display: block"] {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .info-panel-content {
+      padding: 30px 20px;
+      color: #fff;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      position: relative;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    @keyframes fadeInContent {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: rgba(145, 106, 61, 0.8);
+      border: 2px solid white;
+      color: white;
+      font-size: 28px;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .close-btn:hover {
+      background-color: rgba(230, 189, 143, 0.95);
+      transform: scale(1.1);
+    }
+
+    .character-image-container {
+      flex: 0 0 35%;
+      display: flex;
+      justify-content: center;
+      animation: slideUp 0.7s ease 0.4s forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .character-image {
+      max-width: 100%;
+      height: auto;
+      max-height: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .character-image:hover {
+      transform: scale(1.05);
+    }
+
+    .character-info {
+      flex: 1;
+      animation: slideUp 0.7s ease 0.5s forwards;
+      opacity: 0;
+    }
+
+    .character-info h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      margin: 0 0 15px 0;
+      color: rgba(230, 189, 143, 0.95);
+      transition: color 0.3s ease;
+      text-align: left;
+    }
+
+    .character-info p {
+      font-size: clamp(14px, 2vw, 18px);
+      line-height: 1.6;
+      margin: 10px 0;
+      transition: color 0.3s ease;
+      text-align: left;
     }
