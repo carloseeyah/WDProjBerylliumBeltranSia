@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 charMsg = ' Your chosen character: ' + selectedCharacterName + '.';
             }
             alert("Login successful! Welcome, " + user.username + "!" + charMsg);
+            try {
+                localStorage.setItem('currentUser', user.username);
+            } catch (e) {
+                console.warn('Could not set currentUser in localStorage', e);
+            }
             this.reset();
             // Redirect to quiz page or main content
             window.location.href = "index.html";

@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="public/index.css">
     <link rel="icon" type="image/png" href="https://logos-world.net/wp-content/uploads/2023/06/Descendants-Symbol.png">
     <script src="/public/script.js"></script>
+    <script>
+        (function() {
+            try {
+                const current = localStorage.getItem('currentUser');
+                if (!current) {
+                    window.location.href = 'public/Login.html';
+                }
+            } catch (e) {
+                // localStorage may be unavailable — allow access
+                console.warn('localStorage access error', e);
+            }
+        })();
+    </script>
     <title>Rotten To The Core: A Descendants Guide</title>
 
 </head>
