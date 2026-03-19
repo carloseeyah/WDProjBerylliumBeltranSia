@@ -265,3 +265,29 @@ footer {
     list-style-position: inside;
     text-align: left;
   }
+
+    .logout {
+    position: fixed;
+    right: 10%;
+    top: 6%;
+    transform: translate(50%, -50%);
+    font-size: clamp(16px, 2.6vw, 50px);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
+    border: 2px solid white;
+    border-style: hidden;
+    background-color: rgba(145, 106, 61, 0.7);
+    color: white;
+    z-index: 20;
+    cursor: pointer;
+    transition: all 1.0s ease;
+    width: clamp(120px, 18vw, 200px);
+    height: clamp(48px, 12vh, 75px);
+    line-height: normal;
+  }
+
+  .logout:hover {
+    background-color: rgba(230, 189, 143, 0.95);
+    transform: translate(50%, -50%) scale(1.03);
+    color: #fff;
+  }

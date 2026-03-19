@@ -7,6 +7,28 @@
     <meta name="author" content="EC Beltran, CM Sia">
     <link rel="stylesheet" href="../public/songs.css">
     <link rel="icon" type="image/png" href="https://logos-world.net/wp-content/uploads/2023/06/Descendants-Symbol.png">
+    <script>
+        (function() {
+            try {
+                const current = localStorage.getItem('currentUser');
+                if (!current) {
+                    window.location.href = '../Login.html';
+                }
+            } catch (e) {
+                // localStorage may be unavailable — allow access
+                console.warn('localStorage access error', e);
+            }
+        })();
+
+        function logout() {
+            try {
+                localStorage.removeItem('currentUser');
+            } catch (e) {
+                console.warn('Could not remove currentUser from localStorage', e);
+            }
+            window.location.href = 'Login.html';
+        }
+    </script>
     <script src="../public/script.js"></script>
     <title>Rotten To The Core: A Descendants Guide</title>
 
@@ -119,6 +141,7 @@
         <footer>
             2025 PSHS MC Beryllium | All Rights Reserved --
             <a href="References.html">References</a>
+            <a href="#" onclick="logout()" class="logout">Log Out</a>
         </footer>
     </main>
 </body>
