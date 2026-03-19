@@ -266,7 +266,7 @@ footer {
     text-align: left;
   }
 
-    .logout {
+      .logout {
     position: fixed;
     right: 10%;
     top: 6%;
@@ -281,8 +281,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 200px);
-    height: clamp(48px, 12vh, 75px);
+    width: clamp(50px, 10vw, 200px);
+    height: clamp(48px, 6vh, 75px);
     line-height: normal;
   }
 

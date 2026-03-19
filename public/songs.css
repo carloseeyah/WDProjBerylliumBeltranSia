@@ -299,7 +299,7 @@ footer {
     color: #fff;
   }
 
-  .logout {
+      .logout {
     position: fixed;
     right: 10%;
     top: 6%;
@@ -314,8 +314,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 200px);
-    height: clamp(48px, 12vh, 75px);
+    width: clamp(50px, 10vw, 200px);
+    height: clamp(48px, 6vh, 75px);
     line-height: normal;
   }
 
@@ -324,4 +324,3 @@ footer {
     transform: translate(50%, -50%) scale(1.03);
     color: #fff;
   }
-

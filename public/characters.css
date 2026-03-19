@@ -341,8 +341,8 @@ footer {
 
     .mirror-wrap img {
       display: block;
-      width: 225px;
-      height: 300px;
+      width: 10vw;
+      height: 27vh;
       transition: transform 0.5s ease;
       cursor: pointer;
     }
@@ -655,8 +655,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 200px);
-    height: clamp(48px, 12vh, 75px);
+    width: clamp(50px, 10vw, 200px);
+    height: clamp(48px, 6vh, 75px);
     line-height: normal;
   }
 
