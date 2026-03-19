@@ -73,7 +73,7 @@ footer {
 
   /* Changes background and text color on hover to enhance readability */
 
-  .content:hover {
+  .content:hover, .content:focus-within, .content:active, .content:focus {
     background-color: rgba(63, 43, 27, 0.7);
     opacity: 1;
     color: wheat;
@@ -96,7 +96,7 @@ footer {
     min-width: 320px;
   }
 
-  .content2:hover {
+  .content2:hover, .content2:focus-within, .content2:active, .content2:focus {
     background-color: rgba(63, 43, 27, 0.7);
     opacity: 1;
     visibility: visible;
@@ -318,7 +318,7 @@ footer {
   }
 
   .back-item:hover button,
-  .back-item:focus-within button {
+  .back-item:focus-within button, .back-item:active button, .back-item:focus button {
     transform: translate(-50%, -50%) scale(1.03);
     background-color: rgba(230, 189, 143, 0.95);
     color: #fff;
