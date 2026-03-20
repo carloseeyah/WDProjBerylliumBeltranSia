@@ -37,31 +37,31 @@
 ## Wireframes
 
 ### Homepage
-![Homepage](/WDProjBerylliumBeltranSia/assets/Homepage.png)
+![Homepage](../WDProjBerylliumBeltranSia/assets/Homepage.png)
 
 ### About Us
-![About Us](/WDProjBerylliumBeltranSia/assets/About%20Us.png)
+![About Us](../WDProjBerylliumBeltranSia/assets/About%20Us.png)
 
 ### Side Menu Preview
-![Menu Bar](/WDProjBerylliumBeltranSia/assets/Menu%20Bar.png)
+![Menu Bar](../WDProjBerylliumBeltranSia/assets/Menu%20Bar.png)
 
 ### Story
-![Story](/WDProjBerylliumBeltranSia/assets/Story.png)
+![Story](../WDProjBerylliumBeltranSia/assets/Story.png)
 
 ### Characters
-![Characters](/WDProjBerylliumBeltranSia/assets/Characters.png)
+![Characters](../WDProjBerylliumBeltranSia/assets/Characters.png)
 
 ### Cast
-![Cast](/WDProjBerylliumBeltranSia/assets/Cast.png)
+![Cast](../WDProjBerylliumBeltranSia/assets/Cast.png)
 
 ### Songs
-![Songs](/WDProjBerylliumBeltranSia/assets/Songs.png)
+![Songs](../WDProjBerylliumBeltranSia/assets/Songs.png)
 
 ### Game 
-![Game](/WDProjBerylliumBeltranSia/assets/Game.png)
+![Game](../WDProjBerylliumBeltranSia/assets/Game.png)
 
 ### References
-![References](/WDProjBerylliumBeltranSia/assets/References.png)
+![References](../WDProjBerylliumBeltranSia/assets/References.png)
 
 ## For 3rd Quarter Update
 
@@ -74,17 +74,17 @@
 ### Login Page: This page will also incorporate forms, allowing the users to login into their previously made account. If the user does not have an account yet, there is an option for them to be directed to the sign up page.
 
 ### Sign Up Page
-![Sign Up Page](/WDProjBerylliumBeltranSia/assets/SignUp.png)
+![Sign Up Page](../WDProjBerylliumBeltranSia/assets/SignUp.png)
 
 ### Choose Your Character Page (Profile Picture)
-![Choose Your Character](/WDProjBerylliumBeltranSia/assets/ChooseYourCharacter.png)
+![Choose Your Character](../WDProjBerylliumBeltranSia/assets/ChooseYourCharacter.png)
 
 ### Login Page
-![Login](/WDProjBerylliumBeltranSia/assets/Login.png)
+![Login](../WDProjBerylliumBeltranSia/assets/Login.png)
 
 ## FINAL MODIFICATION PROPOSAL
 
 ### Profile Update and Delete Page: This page will incorporate localStorage functions in order to facilitate updating and removing data. By getting the login key from the localStorage of the user, the input in this page will update the login key with the inputted information. In the scenario where the user deletes their profile, it will remove the key entirely and redirect the user back to the sign up page.
 
 ### Update Profile Page
-![Update Profile Page](/WDProjBerylliumBeltranSia/assets/UpdateProfilePage.png)
+![Update Profile Page](../WDProjBerylliumBeltranSia/assets/UpdateProfilePage.png)
