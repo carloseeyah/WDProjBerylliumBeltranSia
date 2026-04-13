@@ -17,8 +17,8 @@ main {
 
 header {
     position: fixed;
-    top: 50px;
-    left: 100px;
+    top: 1%;
+    left: 5%;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 1rem;
@@ -27,7 +27,7 @@ header {
   }
 
   .title {
-    font-size: clamp(24px, 5vw, 48px);
+    font-size: clamp(15px, 4vw, 42px);
     margin: 0;
   }
 
@@ -140,7 +140,7 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     height: 100vh;
-    min-width: clamp(120px, 18vw, 300px);
+    min-width: clamp(80px, 18vw, 300px);
     display: block;
     padding: 10px;
     background-color: transparent;
@@ -190,8 +190,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -210,8 +210,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -230,8 +230,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -250,8 +250,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -270,8 +270,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -290,8 +290,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -310,8 +310,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -330,9 +330,21 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
+  }
+
+  /* Uniform menu button height across pages */
+  .Menu,
+  .Homepage,
+  .Quiz,
+  .Cast,
+  .About,
+  .Songs,
+  .Story,
+  .Characters {
+    height: clamp(9vh, 50px, 12vh);
   }
 
   .back-item button,
@@ -354,7 +366,7 @@ footer {
     transform: translate(50%, -50%);
     font-size: clamp(16px, 2.6vw, 50px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
+    padding: 0.5em 1em;
     border: 2px solid white;
     border-style: hidden;
     background-color: rgba(145, 106, 61, 0.7);
@@ -362,8 +374,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(50px, 10vw, 200px);
-    height: clamp(48px, 6vh, 75px);
+    width: 4em;
+    height: 1.5em;
     line-height: normal;
   }
 

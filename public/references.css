@@ -32,7 +32,7 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     height: 100vh;
-    min-width: clamp(120px, 18vw, 300px);
+    min-width: clamp(80px, 18vw, 300px);
     display: block;
     padding: 10px;
     background-color: transparent;
@@ -82,8 +82,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -102,8 +102,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -122,8 +122,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -142,8 +142,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -162,8 +162,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -182,8 +182,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -202,8 +202,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -222,8 +222,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(120px, 18vw, 300px);
-    height: clamp(48px, 12vh, 120px);
+    width: clamp(80px, 18vw, 300px);
+    height: clamp(36px, 12vh, 120px);
     line-height: normal;
   }
 
@@ -244,7 +244,7 @@ footer {
     left: 10%;
     top: 2%;
     text-align: center;
-    font-size: clamp(32px, 5vw, 70px);
+    font-size: clamp(24px, 4vw, 48px);
     color: wheat;
     background-color: rgba(63, 43, 27, 0.7);
     padding: 20px;
@@ -273,7 +273,7 @@ footer {
     transform: translate(50%, -50%);
     font-size: clamp(16px, 2.6vw, 50px);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: clamp(8px,1.2vw,15px) clamp(12px,2.4vw,30px);
+    padding: 0.5em 1em;
     border: 2px solid white;
     border-style: hidden;
     background-color: rgba(145, 106, 61, 0.7);
@@ -281,8 +281,8 @@ footer {
     z-index: 20;
     cursor: pointer;
     transition: all 1.0s ease;
-    width: clamp(50px, 10vw, 200px);
-    height: clamp(48px, 6vh, 75px);
+    width: 4em;
+    height: 1.5em;
     line-height: normal;
   }
 
