@@ -15,12 +15,10 @@ main {
 	box-sizing: border-box;
 }
 
-
-
 header {
     position: fixed;
-    top: 50px;
-    left: 100px;
+    top: 0.5%;
+    left: 20%;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 1rem;
@@ -29,7 +27,7 @@ header {
   }
 
   .top-title {
-    font-size: clamp(24px, 5vw, 48px);
+    font-size: clamp(18px, 2.5vw, 28px);
     margin: 0;
   }
 
@@ -51,9 +49,9 @@ footer {
     row-gap: 56px;
     align-items: stretch;
     max-width: min(1200px, 95%);
-    margin: 2rem auto;
+    margin: clamp(1rem, 3vh, 2rem) auto;
     box-sizing: border-box;
-    padding: 32px;
+    padding: clamp(16px, 3vw, 32px);
   }
 
   .about-section > div {
