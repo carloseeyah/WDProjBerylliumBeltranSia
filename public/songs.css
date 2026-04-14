@@ -41,6 +41,32 @@ footer {
     bottom: 0px;
     width: 100%;
   }
+
+  .profile {
+    position: fixed;
+    right: 10%;
+    top: 16%;
+    transform: translate(50%, -50%);
+    font-size: clamp(16px, 2.6vw, 50px);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0.5em 1em;
+    border: 2px solid white;
+    border-style: hidden;
+    background-color: rgba(145, 106, 61, 0.7);
+    color: white;
+    z-index: 20;
+    cursor: pointer;
+    transition: all 1.0s ease;
+    width: 4em;
+    height: 1.5em;
+    line-height: normal;
+  }
+
+  .profile:hover {
+    background-color: rgba(230, 189, 143, 0.95);
+    transform: translate(50%, -50%) scale(1.03);
+    color: #fff;
+  }
   
   .about-section {
     display: grid;

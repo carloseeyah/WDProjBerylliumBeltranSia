@@ -1,0 +1,193 @@
+html {
+    font-size: clamp(14px, 1.4vw, 18px);
+}
+
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(/WDProjBerylliumBeltranSia/website-assets/FormBackground.png) center/cover no-repeat;
+	min-height: 100vh;
+	font-size: 1rem;
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	padding: 1rem; 
+	box-sizing: border-box;
+}
+
+#welcomeMsg {
+    font-size: clamp(12px, 2vw, 26px);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0.2rem;
+  background-color: rgb(63, 43, 27);
+  color: #fff;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.profileForm {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem 1rem 2rem;
+    border-radius: 8px;
+    border: 8px solid #3f2b1b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 650px;
+    box-sizing: border-box;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    gap: 1rem;
+}
+
+#profileDisplay p {
+    margin: 0.5rem 0;
+    width: 100%;
+    padding: 10px;
+    border: 5px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+#profileForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#profileForm label {
+    font-weight: bold;
+}
+
+#profileForm input {
+    padding: 0.5rem;
+    border: 1px solid #3f2b1b;
+    border-radius: 4px;
+}
+
+#profileForm button {
+    padding: 0.5rem;
+    background-color: #3f2b1b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+#profileForm button:hover {
+    background-color: #5a3d2b;
+}
+
+#editBtn {
+    padding: 0.5rem;
+    background-color: #3f2b1b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#editBtn:hover {
+    background-color: #5a3d2b;
+}
+
+#cancelBtn {
+    background-color: #ccc;
+    color: black;
+}
+
+#cancelBtn:hover {
+    background-color: #aaa;
+}
+
+.login-container h1 {
+    font-size: clamp(30px, 6vw, 50px);
+    margin: 0;
+}
+
+#profileForm input[type="text"],
+#profileForm input[type="password"], #profileForm select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 5px solid rgb(63, 43, 27);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+#profileForm input[type="text"]:focus,
+#profileForm input[type="password"]:focus, #profileForm select:focus {
+   outline: none;
+    border-color: #8B4513;
+    box-shadow: 0 0 5px rgba(139, 69, 19, 0.5);
+}
+
+button {
+    background-color: rgb(63, 43, 27);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(16px, 2vw, 20px);
+    margin-top: 15px;
+    align-self: center;
+}
+
+.Mirror {
+    width: 200px;
+    height: 200px;
+}
+
+.Mirror img {
+    width: 90%;
+    height: 100%;
+    transform: scale(2);
+    object-fit: contain;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(63, 43, 27);
+    display: flex;
+    align-items: center;
+    font-size: clamp(30px, 3vw, 40px);
+  }
+
+.home {
+    padding: 0.5rem;
+    background-color: #3f2b1b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: clamp(16px, 2vw, 20px);
+}

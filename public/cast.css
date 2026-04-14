@@ -61,6 +61,32 @@ footer {
     width: 100%;
   }
 
+  .profile {
+    position: fixed;
+    right: 10%;
+    top: 16%;
+    transform: translate(50%, -50%);
+    font-size: clamp(16px, 2.6vw, 50px);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0.5em 1em;
+    border: 2px solid white;
+    border-style: hidden;
+    background-color: rgba(145, 106, 61, 0.7);
+    color: white;
+    z-index: 20;
+    cursor: pointer;
+    transition: all 1.0s ease;
+    width: 4em;
+    height: 1.5em;
+    line-height: normal;
+  }
+
+  .profile:hover {
+    background-color: rgba(230, 189, 143, 0.95);
+    transform: translate(50%, -50%) scale(1.03);
+    color: #fff;
+  }
+
   /*Pop-up menu for navigation buttons*/
 
   .back-menu {
@@ -543,7 +569,7 @@ footer {
       right: 40%;
       top: 50%;
       transform: translate(50%, -50%);
-      width: clamp(20vw, 50vw, 60vw);
+      width: clamp(20vw, 35vw, 60vw);
       max-height: 100vh;
       background-color: rgba(63, 43, 27, 0.95);
       display: block;
@@ -586,9 +612,9 @@ footer {
       background-color: rgba(145, 106, 61, 0.8);
       border: 2px solid white;
       color: white;
-      font-size: clamp(17px, 1.5vw, 28px);
-      width: clamp(16px, 3.67vw, 24px);
-      height: clamp(16px, 3.67vw, 24px);
+      font-size: clamp(17px, 1.5vw, 20px);
+      width: clamp(16px, 3.67vw, 30px);
+      height: clamp(16px, 3.67vw, 30px);
       padding: 0;
       cursor: pointer;
       border-radius: 50%;
