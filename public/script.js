@@ -1,3 +1,4 @@
+// quiz js test
 document.addEventListener("DOMContentLoaded", function() {
     let quizForm = document.querySelector("#quizForm");
     let submitButton = document.querySelector(".submit-button");

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("loginForm");
-    if (!form) return;
+    if (!form) return; // if missing form element
 
     form.addEventListener("submit", function(x) {
         x.preventDefault();
@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        const data = Object.fromEntries(new FormData(this).entries());
+        const data = Object.fromEntries(new FormData(this).entries()); // form data to object
 
-        // Attach selected character (if any) to the new user record
+        // attach selected character (if any) to the new user record
         let selected = null;
         try {
             selected = JSON.parse(localStorage.getItem('selectedCharacter')) || null;
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         data.selectedCharacter = selected || null;
 
         let users = JSON.parse(localStorage.getItem("users") || "[]");
-        // Reject signup if a user with the same username and password already exists
+        // rejects signup if a user with the same username and password already exists
         const duplicate = users.some(u => u.username === data.username && u.password === data.password);
         if (duplicate) {
             alert('A user with the same username and password already exists. Please choose different credentials.');
@@ -31,14 +31,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         users.push(data);
         localStorage.setItem("users", JSON.stringify(users));
-        // Remember which user just signed up so character selection can attach to this account
+        // remembers which user just signed up so character selection can attach to this account
         if (data.username) {
             localStorage.setItem('pendingUser', data.username);
         }
 
         alert("Sign up successful! Redirecting to character selection...");
         this.reset();
-        // Redirect to choose-a-character page
+        // go to choose-a-character page
         window.location.href = "public/ChooseYourCharacter.html";
     });
 });

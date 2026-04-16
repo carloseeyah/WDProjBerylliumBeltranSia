@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let quizScore = 0;
     let userAnswers = {};
 
-    //Event listener for form submission
+    //event listener for form submission
     if (quizForm) {
         quizForm.addEventListener("submit", function(event) {
             event.preventDefault();

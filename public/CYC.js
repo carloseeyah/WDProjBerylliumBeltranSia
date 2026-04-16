@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Expose a global function used by inline onclick handlers in ChooseYourCharacter.html
     window.CharacterFunction = function(name, img) {
         if (!name) return;
         if (!confirm(`Select ${name} as your character?`)) return;
@@ -8,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
             name: name
         };
 
-        // Save selection globally
+        // save selection globally
         localStorage.setItem('selectedCharacter', JSON.stringify(selected));
 
-        // If there's a pending user (just signed up), attach the selected character to that user
+        // If theres a pending user (just signed up) attach the selected character to that user
         const pending = localStorage.getItem('pendingUser');
         if (pending) {
             try {
@@ -28,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         alert(`${name} selected and saved.`);
-        // Redirect back to login
+        // redirect back to login
         window.location.href = '../Login.html';
     };
 });

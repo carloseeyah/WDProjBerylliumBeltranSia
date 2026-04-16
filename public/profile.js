@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
-    // Get selected character name
+    // get selected character name
     let selectedCharacterName = 'None';
     if (user.selectedCharacter) {
         selectedCharacterName = user.selectedCharacter.name || (typeof user.selectedCharacter === 'string' ? user.selectedCharacter : 'None');
@@ -28,15 +28,15 @@ document.addEventListener("DOMContentLoaded", function() {
             profilepic.src = "/WDProjBerylliumBeltranSia/website-assets/carlospfp.png";
         } else if (name === 'Ben') {
             profilepic.src = "/WDProjBerylliumBeltranSia/website-assets/benpfp.png";
-        }
+        } // get selected character and update profile picture accordingly, defaults to mirror if no character or unknown character
     }
 
-    // Display user details
+    // display user details
     document.getElementById("displayUsername").textContent = user.username;
     document.getElementById("displayCharacter").textContent = selectedCharacterName;
     updateProfilePic(selectedCharacterName);
 
-    // Edit button
+    // edit button
     document.getElementById("editBtn").addEventListener("click", function() {
         document.getElementById("profileDisplay").style.display = "none";
         document.getElementById("profileForm").style.display = "block";
@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("character").value = currentSelection;
     });
 
-    // Cancel button
+    // cancel
     document.getElementById("cancelBtn").addEventListener("click", function() {
         document.getElementById("profileForm").style.display = "none";
         document.getElementById("profileDisplay").style.display = "block";
     });
 
-    // Save changes
+    // save
     document.getElementById("profileForm").addEventListener("submit", function(e) {
         e.preventDefault();
         if (!confirm("Save profile changes?")) {
@@ -67,33 +67,33 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        // Check if new username is taken by another user
+        // check if new username is taken by another user
         const usernameTaken = users.some(u => u.username === newUsername && u.username !== user.username);
         if (usernameTaken) {
             alert("Username already taken.");
             return;
         }
 
-        // Update user
+        // update user
         user.username = newUsername;
         user.password = newPassword;
         user.selectedCharacter = newCharacter;
 
-        // Update users array
+        // update users array
         const userIndex = users.findIndex(u => u.username === currentUser);
         users[userIndex] = user;
 
-        // Save to localStorage
+        // save to localStorage
         localStorage.setItem("users", JSON.stringify(users));
         localStorage.setItem('currentUser', newUsername);
 
-        // Update display
+        // update display
         document.getElementById("displayUsername").textContent = newUsername;
         document.getElementById("displayCharacter").textContent = newCharacter;
         updateProfilePic(newCharacter);
         document.getElementById("profileForm").style.display = "none";
         document.getElementById("profileDisplay").style.display = "block";
 
-        alert("Profile updated successfully!");
+        alert("Profile updated successfully!"); // success
     });
 });

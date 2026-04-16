@@ -15,7 +15,7 @@
     <main>
         <div class="profileForm">
             <div class="Mirror">
-                <img id="profilePic" src="" alt="Mirror Image">
+                <img id="profilePic" src="" alt="Mirror Image"> <!-- mirror image of selected character -->
             </div>
         
         <div class="profile-container">
@@ -27,7 +27,9 @@
                 <button id="editBtn">Edit Profile</button>
                 <button type="button" class="home" onclick="window.location.href='../index.html'">Back To Home</button>
             </div>
-            <form id="profileForm" style="display: none;">
+            <form id="profileForm" style="display: none;"> <!-- separate and hidden -->
+
+                <!-- form inputs for editing -->
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required><br>
                 <label for="password">Password:</label>
